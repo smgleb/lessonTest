@@ -62,25 +62,25 @@ numInStr(["this is a test", "test1"]) ➞ ["test1"]
 Попробуйте решить это без регулярного выражения.
 
 */
-// function numInStr(arr) {
-// 	newArr = [];
-// 	for (let i = 0; i < arr.length; i++) {
+function numInStr(arr) {
+	newArr = [];
+	for (let i = 0; i < arr.length; i++) {
 
-// 		for (let n = 0; n < arr[i].length; n++) {
+		for (let n = 0; n < arr[i].length; n++) {
 
-// 			if (isFinite(arr[i][n]) && arr[i][n] !== ' ') {
-// 				newArr.push(arr[i]);
-// 				break;
-// 			}
+			if (isFinite(arr[i][n]) && arr[i][n] !== ' ') {
+				newArr.push(arr[i]);
+				break;
+			}
 
-// 		}
-// 	}
-// 	return newArr;
-// }
-// console.log(numInStr(["1a", "a", "2b", "b"]));
-// console.log(numInStr(["abc", "ab10c", "a10bc", "bcd"]));
-// console.log(numInStr(["abc", "abc10"]));
-// console.log(numInStr(["this is a test", "test1"]));
+		}
+	}
+	return newArr;
+}
+console.log(numInStr(["1a", "a", "2b", "b"]));
+console.log(numInStr(["abc", "ab10c", "a10bc", "bcd"]));
+console.log(numInStr(["abc", "abc10"]));
+console.log(numInStr(["this is a test", "test1"]));
 
 
 /*
